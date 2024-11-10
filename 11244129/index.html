@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷網站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#skills">個人專業與技能</a>
+        <a href="#experience">個人經歷</a>
+        <a href="#contact">聯絡方式</a>
+    </nav>
+         <header>
+        <div class="profile">
+            <img src="image/profile.jpg" alt="個人照片" class="profile-photo">
+            <h1>朱廷哲</h1>
+            <p>個性簡介：我是一個做事認真且活潑外向熱情的人</p>
+            <p class="slogan">「做事情的時候沒有虧的話，就一定有地方是賺的。」</p>
+        </div>
+    </header>
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+    <section id="skills">
+        <h2>個人專業與技能</h2>
+        <div class="skills-image-container">
+            <img src="image/skills.jpg" alt="專業技能圖片" class="skills-image">
+        </div>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>專業技能一: Python</h3>
+                <p>學會了基礎的 Python 檔案運用，在大一有學習過 Python 的運算邏輯使我可以做基礎的 Python 程式。</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>專業技能二: 室內設計</h3>
+                <p>曾經學習過室內設計的繪圖技巧，稍微會繪製一些居家風格的設計。</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 50%;">50%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience">
+        <h2>個人經歷</h2>
+        <div class="experience-item">
+            <img src="image/experience1.jpg" alt="經歷圖片">
+            <h3>非你不可，一起來縫</h3>
+            <p>參與了縫製布衛生棉的活動，而這個活動的初衷是為了讓貧窮國家的人可以使用我們編織的衛生棉來使用，這樣就不用花費大價錢再去購買衛生棉，
+                也讓我了解到世界上月經貧窮的人有多麼的不容易，有各種原因讓他們需要使用可再次使用的衛生棉，
+                雖然我們感覺只是一件小小的事卻能讓他們煩惱很久，希望以後還能幫助更多需要幫助的人</p>
+                <a href="https://docs.google.com/document/d/1bJI1tPUGHQm_5PZNf3TZP2iMHarQaCi05HBkkBezO2M/edit?usp=sharing" target="_blank">相關鏈接或展示</a>
+            </div>
+        <div class="experience-item">
+            <img src="image/experience2.jpg" alt="經歷圖片">
+            <h3>中原資管系系籃球隊</h3>
+            <p>我在大一剛開學的時候有加入系籃去參與新生盃籃球比賽，
+                在這當中我們隊一路披荊斬棘在新生盃的比賽中也獲得了第一名的成績，
+                在這比賽中我也學習到了團隊合作的重要性，也交到了許多的同系朋友。
+            </p>
+            <a href="https://www.instagram.com/p/Cw7sptEJYvC/?img_index=4" target="_blank">相關鏈接或展示</a>
+        </div>
+        <div class="experience-item">
+            <img src="image/experience3.jpg" alt="經歷圖片">
+            <h3>資管大運會運動比賽</h3>
+            <p>第三個活動是我參加了學校舉辦的大運會當中的資管系大隊接力
+                ，上了大學之後或許不多人會參與這種活動，
+                但我還是想為我們系獲得一些榮耀所以參與了這個活動。</p>
+            <a href="https://www.instagram.com/p/C4h9XDcLjGX/" target="_blank">相關鏈接或展示</a>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <h2>聯絡資訊</h2>
+        <p>Email: <a href="mailto:a29898035@gmail.com">a29898035@gmail.com</a></p>
+        <p>社交媒體:
+            <a href="https://www.facebook.com/profile.php?id=100005041452104&locale=zh_TW" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/tingzhezhu/" target="_blank">Instagram</a> |
+        </p>
+    </footer>
+
+</body>
+</html>
